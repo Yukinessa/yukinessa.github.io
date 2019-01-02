@@ -1,0 +1,118 @@
+<html>
+    <meta charset="UTF-8"/>
+    <head>
+        <title>UTS</title>
+		<link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+		<script src="prefixfree.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+		<style>
+            body{
+                background-color:black;
+			}
+			.mycontainer{
+				position: absolute;
+				top: 50px;
+				left:0;
+				right:0;
+				padding:5%;
+				margin-left:auto;
+				margin-right:auto;
+				background-color: aliceblue;
+				min-height: 768px;
+				opacity: 0.7;
+			}
+			.myacontainer{
+				position: absolute;
+				top: 350px;
+				left:0;
+				right:0;
+				padding:5%;
+				margin-left:auto;
+				margin-right:auto;
+				background-color: aliceblue;
+				min-height: 768px;
+				opacity: 0.9;
+			}
+			.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: white;
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 60px;
+			}
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				text-decoration: none;
+				font-size: 25px;
+				color: #818181;
+				display: block;
+				transition: 0.3s;
+			}
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+			@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+			}
+		</style>
+	</head>
+    <body>
+		<canvas style="position:absolute;z-index:-1;"></canvas>
+		<script src="stats.js"></script>
+		<script src="zepto.min.js"></script>
+		<script src="index.js"></script>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html"><i class="fa fa-home"></i> Novemberfest</a>
+			<a href="timeline.html"><i class="fa fa-check"></i> Step by Step</a>
+			<a href="Profil.html"><i class="fa fa-user"></i> About Creator</a>
+		</div>
+		<span style="font-size:30px;cursor:pointer;color: white" onclick="openNav()">&#9776;</span>
+		<div class="container mycontainer" >
+			<div class="jumbotron">
+				<h2 class="text-center">Celebrating Five Years</h2>
+				<H1 style="font-family: 'Shadows Into Light', cursive;" class="text-center" >NOVEMBERFEST</H1>
+				<h3 class="text-center">Support open source and earn a limited edition T-shirt.</h3>
+				<center><a href="timeline.html" class="btn btn-default" role="button" > Start Hack</a></center> 
+			</div>
+			<div class="row">
+					<div class="jumbotron">
+							<h2 class="text-center" > - Rules -</h2>
+						<h4 class="text-justify">
+							To get a shirt, you must make five pull requests between October 1–31 in any timezone. PRs can be to any public
+							repo on GitHub, not just the ones highlighted. The PR must contain commits you made yourself (not to your own repo).
+							PRs reported by maintainers as spam or that are automated will be marked as invalid and won't count towards the shirt.
+							This year, the first 50,000 of you can earn a T-shirt (compared with 30,000 in 2017).
+						</h4>
+					</div>
+			</div>
+		</div>
+
+				
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+	</body>
+</html>

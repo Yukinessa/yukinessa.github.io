@@ -1,0 +1,162 @@
+<html>
+    <meta charset="UTF-8"/>
+    <head>
+        <title>UTS</title>
+		<link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+		<script src="prefixfree.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+		<style>
+            body{
+                background-color:black;
+			}
+			.wallpaper{
+				width: 205%;
+				height: auto;
+			}
+			.avatar {
+				vertical-align: middle;
+				width: 125px;
+				height: 120px;
+				left: 50%;
+				right: auto;
+				border-radius: 50%;
+			}
+			.top-left {
+    			position: absolute;
+    			top: 8px;
+    			left: 16px;
+			}
+			.kotak{
+				background-color: white;
+				width: 100%;
+				height: 690px;
+				opacity: 1.5;
+			}
+			.mycontainer{
+				position: absolute;
+				top: 50px;
+				left:0;
+				right:0;
+				padding:5%;
+				margin-left:auto;
+				margin-right:auto;
+				background-color: aliceblue;
+				min-height: 768px;
+				opacity: 0.7;
+			}
+			.myacontainer{
+				position: absolute;
+				top: 350px;
+				left:0;
+				right:0;
+				padding:5%;
+				margin-left:auto;
+				margin-right:auto;
+				background-color: aliceblue;
+				min-height: 768px;
+				opacity: 0.9;
+			}
+			.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: white;
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 60px;
+			}
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				text-decoration: none;
+				font-size: 25px;
+				color: #818181;
+				display: block;
+				transition: 0.3s;
+			}
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+			@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+			}
+		</style>
+	</head>
+    <body>
+		<canvas style="position:absolute;z-index:-1;"></canvas>
+		<script src="stats.js"></script>
+		<script src="zepto.min.js"></script>
+		<script src="index.js"></script>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html"><i class="fa fa-home"></i> Novemberfest</a>
+			<a href="timeline.html"><i class="fa fa-check"></i> Step by Step</a>
+			<a href="Profil.html"><i class="fa fa-user"></i> About Creator</a>
+		</div>
+		<span style="font-size:30px;cursor:pointer;color: white" onclick="openNav()">&#9776;</span>
+		
+		<div class="container mycontainer" >
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="background.jpg" alt="wallpaper" class="wallpaper">
+					<div class="top-left">
+						<img src="avatar.jpg" alt="avatar" class="avatar">
+						<h4>Kun Amrin Amanu</h4>
+						<h5>Semarang, 8/4/2018</h5>
+						<h5>A11.2017.10333</h5>
+						<h5>Doscom</h5>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="jumbotron kotak">
+						<h2 class="text-center">
+							Backend Programmer
+						</h2>
+						<h4>
+							I was a Backend Programmer especially on Bash Script, 2017 is my
+							first time fall into programmer world and now i join inside of big
+							project named "TeaLinux OS". TealinuxOS is Operating System based on
+							Open Source, and using Linux as kernel. Now TealinuxOS was reach
+							11 Version, means we're already developing Tealinux for 11 Years.
+						</h4>
+						<h2 class="text-center">
+							Motivation
+						</h2>
+						<h4>
+							Why I make Novemberfest? It's Pretty Easy to explain, I was motivated by
+							some event for all people around of the world, named Hacktoberfest, and
+							i was thinking why can't we make Novemberfest too? and this event make
+							all programmer have a motivation about contributing in some another
+							repository that actually need our contribution, so we can share our code
+							and help people who need to help with their code. We Share We Care. 
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+				
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+	</body>
+</html>
